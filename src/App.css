@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    font-family: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", "Figtree", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.Container {
+    max-width: 100vw;
+    height: 100vh;
+    text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.Container_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./Assets/main.jpg");
+   height: 30vh;
+   background-size: cover;
+   box-shadow: rgba(10, 4, 4, 0.35) 5px 10px 15px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    
+}
+.gallery {
+    margin: 15px;
+    
+}
+.heading {
+    color: white;
+    font-family: "Lucida Console";
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.home_image {
+    width: 20vw;
+    height: 55vh;
+    margin: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(10, 4, 4, 0.35) 5px 10px 15px;
+}
+.zoom-effect {
+    transition: transform 0.3s ease;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .zoom-effect:hover {
+    transform: scale(1.1); 
   }
-  to {
-    transform: rotate(360deg);
+.input_home {
+    width: 50vw;
+    height: 40px;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: rgb(58, 0, 124);
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(181, 25, 212);
+    background-color: rgb(246, 246, 250);
+    
+}
+.input_home:hover {
+    border-color: rgb(33, 192, 197); 
   }
+.card-image {
+    width: 20vw;
+    height: 25vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.router_container {
+    margin: 30px;
+}
+.container_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around
+}
+.text {
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 5px;
+  
+}
+.heading_1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    color: rgb(161, 228, 167);
+    text-align: start;
+}
+.Container_beach {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./Assets/Beach.jpg");
+   height: 30vh;
+   background-size: cover;
+   box-shadow: rgba(10, 4, 4, 0.35) 5px 10px 15px;   
+}
+.Container_bird {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./Assets/birds.jpg");
+   height: 30vh;
+   background-size: cover;
+   box-shadow: rgba(10, 4, 4, 0.35) 5px 10px 15px;   
+}
+.Container_mountains {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./Assets/mountains.jpg");
+   height: 30vh;
+   background-size: cover;
+   box-shadow: rgba(10, 4, 4, 0.35) 5px 10px 15px;   
+}
+.Container_food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./Assets/food.jpg");
+   height: 30vh;
+   background-size: cover;
+   box-shadow: rgba(10, 4, 4, 0.35) 5px 10px 15px;   
+}
+.title {
+    color: #2c343e;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 65px;
+    letter-spacing: -.02em;
+    
+    text-align: left;
+    margin: 20px;
+    margin-left: 5rem;
 }
